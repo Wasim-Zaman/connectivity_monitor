@@ -1,10 +1,12 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 class CounterNotifier extends Notifier<int> {
+  final int _counter = 0;
+  
   @override
   int build() {
     // Initial counter value
-    return 0;
+    return _counter;
   }
 
   // Method to increment the counter
