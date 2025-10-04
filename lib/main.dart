@@ -42,45 +42,7 @@ class MyApp extends StatelessWidget {
           scaffoldBackgroundColor: const Color(0xFF0F172A),
         ),
         themeMode: ThemeMode.light,
-        home: BlocConsumer<ConnectivityCubit, ConnectivityStatus>(
-          listener: (context, state) {
-            if (state is ConnectivityDisconnected) {
-              ScaffoldMessenger.of(context).showSnackBar(
-                SnackBar(
-                  content: const Row(
-                    children: [
-                      Icon(Icons.wifi_off, color: Colors.white),
-                      SizedBox(width: 12),
-                      Text('Connection lost'),
-                    ],
-                  ),
-                  backgroundColor: Colors.red.shade600,
-                  behavior: SnackBarBehavior.floating,
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(12),
-                  ),
-                ),
-              );
-            } else if (state is ConnectivityConnected) {
-              ScaffoldMessenger.of(context).showSnackBar(
-                SnackBar(
-                  content: const Row(
-                    children: [
-                      Icon(Icons.wifi, color: Colors.white),
-                      SizedBox(width: 12),
-                      Text('Connected to internet'),
-                    ],
-                  ),
-                  backgroundColor: Colors.green.shade600,
-                  behavior: SnackBarBehavior.floating,
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(12),
-                  ),
-                  duration: const Duration(seconds: 2),
-                ),
-              );
-            }
-          },
+        home: BlocBuilder<ConnectivityCubit, ConnectivityStatus>(
           builder: (context, state) {
             return AnimatedSwitcher(
               duration: const Duration(milliseconds: 400),
