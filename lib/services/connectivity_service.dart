@@ -1,4 +1,4 @@
-import 'package:connectivity_monitor/services/cubits/connectivity_status_states.dart';
+import 'package:connectivity_monitor/cubits/connectivity_status_states.dart';
 import 'package:connectivity_plus/connectivity_plus.dart';
 
 class ConnectivityService {

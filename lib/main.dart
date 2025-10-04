@@ -1,6 +1,6 @@
-import 'package:connectivity_monitor/services/cubits/connectivity_cubit.dart';
-import 'package:connectivity_monitor/services/cubits/connectivity_status_states.dart';
-import 'package:connectivity_monitor/services/cubits/counter_cubit.dart';
+import 'package:connectivity_monitor/cubits/connectivity_cubit.dart';
+import 'package:connectivity_monitor/cubits/connectivity_status_states.dart';
+import 'package:connectivity_monitor/cubits/counter_cubit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
