@@ -13,10 +13,10 @@ A Flutter application that demonstrates real-time internet connectivity monitori
 
 ## 📸 Screenshots
 
-|                                Connected State                                 |                                Disconnected State                                 |
-| :----------------------------------------------------------------------------: | :-------------------------------------------------------------------------------: |
-| ![Connected State](assets/ss/Screenshot%202025-10-06%20at%2012.10.16%20AM.png) | ![Disconnected State](assets/ss/Screenshot%202025-10-06%20at%2012.10.31%20AM.png) |
-|                 App in connected state with counter interface                  |                     App showing no internet connection screen                     |
+|                Connected State                |                Disconnected State                 |
+| :-------------------------------------------: | :-----------------------------------------------: |
+|  ![Connected State](assets/ss/connected.png)  | ![Disconnected State](assets/ss/disconnected.png) |
+| App in connected state with counter interface |     App showing no internet connection screen     |
 
 ## 🏗️ Architecture
 
