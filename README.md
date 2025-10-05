@@ -11,6 +11,13 @@ A Flutter application that demonstrates real-time internet connectivity monitori
 - **Cross-platform**: Runs on Android, iOS, Web, Windows, macOS, and Linux
 - **Responsive Design**: Adapts to different screen sizes and orientations
 
+## 📸 Screenshots
+
+|                                Connected State                                 |                                Disconnected State                                 |
+| :----------------------------------------------------------------------------: | :-------------------------------------------------------------------------------: |
+| ![Connected State](assets/ss/Screenshot%202025-10-06%20at%2012.10.16%20AM.png) | ![Disconnected State](assets/ss/Screenshot%202025-10-06%20at%2012.10.31%20AM.png) |
+|                 App in connected state with counter interface                  |                     App showing no internet connection screen                     |
+
 ## 🏗️ Architecture
 
 This project follows a clean architecture pattern with separation of concerns:
