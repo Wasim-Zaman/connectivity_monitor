@@ -1,4 +1,5 @@
 import 'package:connectivity_monitor/app.dart';
+import 'package:connectivity_monitor/controllers/resource_bindings.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -16,7 +17,8 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: const MyHomePage(title: 'Connectivity Monitor Home Page'),
+      home: const MyHomePage(title: 'Connectivity Monitor'),
+      initialBinding: ResourceBindings(),
     );
   }
 }
