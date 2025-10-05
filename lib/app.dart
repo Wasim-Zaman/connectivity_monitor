@@ -15,30 +15,34 @@ class MyHomePage extends GetView<CounterController> {
     final connectivityStatus = connectivityController.currentStatus.value;
 
     if (connectivityStatus == ConnectivityUnknown()) {
-      return Scaffold(
-        backgroundColor: const Color(0xFF0f0f23),
-        body: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              SizedBox(
-                width: 60,
-                height: 60,
-                child: CircularProgressIndicator(
-                  valueColor: AlwaysStoppedAnimation<Color>(Colors.cyan[400]!),
-                  strokeWidth: 4,
+      return Obx(
+        () => Scaffold(
+          backgroundColor: const Color(0xFF0f0f23),
+          body: Center(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                SizedBox(
+                  width: 60,
+                  height: 60,
+                  child: CircularProgressIndicator(
+                    valueColor: AlwaysStoppedAnimation<Color>(
+                      Colors.cyan[400]!,
+                    ),
+                    strokeWidth: 4,
+                  ),
                 ),
-              ),
-              const SizedBox(height: 24),
-              Text(
-                'Connecting...',
-                style: TextStyle(
-                  fontSize: 18,
-                  color: Colors.cyan[400],
-                  fontWeight: FontWeight.w500,
+                const SizedBox(height: 24),
+                Text(
+                  'Connecting...',
+                  style: TextStyle(
+                    fontSize: 18,
+                    color: Colors.cyan[400],
+                    fontWeight: FontWeight.w500,
+                  ),
                 ),
-              ),
-            ],
+              ],
+            ),
           ),
         ),
       );
