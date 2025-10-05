@@ -17,7 +17,6 @@ class ConnectivityController extends GetxController {
     super.onInit();
 
     _subscription = _connectivityService.connectivityStream.listen((status) {
-      print("Subscription status: ${status.runtimeType}");
       currentStatus.value = status;
     });
   }
