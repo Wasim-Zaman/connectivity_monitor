@@ -1,4 +1,9 @@
 {
     "dart.flutterSdkPath": "/Users/wasimzaman/.puro/envs/latest/flutter",
-    "dart.sdkPath": "/Users/wasimzaman/.puro/envs/latest/flutter/bin/cache/dart-sdk"
+    "dart.sdkPath": "/Users/wasimzaman/.puro/envs/latest/flutter/bin/cache/dart-sdk",
+    "workbench.colorCustomizations": {
+        "activityBar.background": "#0D3516",
+        "titleBar.activeBackground": "#124A1F",
+        "titleBar.activeForeground": "#F5FDF7"
+    }
 }
