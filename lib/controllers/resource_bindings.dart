@@ -1,4 +1,5 @@
 import 'package:connectivity_monitor/controllers/connectivity_controller.dart';
+import 'package:connectivity_monitor/controllers/counter_controller.dart';
 import 'package:connectivity_monitor/services/connectivity_services.dart';
 import 'package:get/get.dart';
 
@@ -10,5 +11,6 @@ class ResourceBindings extends Bindings {
 
     // Controllers
     Get.lazyPut(() => ConnectivityController());
+    Get.lazyPut(() => CounterController());
   }
 }
